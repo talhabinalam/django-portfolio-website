@@ -1,0 +1,64 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-warning mb-5 border-bottom">CONTACT</h1>
+    <div class="row text-white mb-5">
+        <p class="mx-auto mb-5">
+            Do you have any questions? Please contact us. We will reach you within matter of hours.Thank you!
+        </p>
+        <div class="col-sm-9">
+            <form action="">
+                <div class="row">
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="inputName">Your Name</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="inputEmail">Your Email *</label>
+                            <input type="email" class="form-control" id="inputEmail" required>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                            <label for="inputSubject">Subject *</label>
+                            <input type="text" class="form-control" id="inputSubject" required>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                            <label for="inputMessage">Message *</label>
+                            <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="col-sm-3 text-center">
+            <ul class="list-unstyle">
+                <div>
+                    <i class="fas fa-map-marker-alt mt-4 fa-2x i-color"></i>
+                    <p>Dhaka, Bangladesh</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone mt-4 fa-2x i-color"></i>
+                    <p>+008 1783 000000</p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope mt-4 fa-2x i-color"></i>
+                    <p>contact@email.com</p>
+                </div>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+<div class="text-center col-sm-10">
+    <a href="#"><i class="fab fa-twitter fa-2x mx-2 i-color"></i></a>
+    <a href="#"><i class="fab fa-facebook fa-2x mx-2 i-color"></i></a>
+    <a href="#"><i class="fab fa-github fa-2x mx-2 i-color"></i></a>
+</div>
+
+{% endblock %}
